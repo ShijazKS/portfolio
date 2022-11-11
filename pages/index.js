@@ -6,21 +6,22 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
+import pic from "../public/pic.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+
+
+// import pan from "../public/pan.pdf";
+import soon1 from "../public/soon1.png";
+import soon2 from "../public/soon2.png";
+import soon3 from "../public/soon3.png";
 import web_1 from "../public/web_1.png";
 import web_2 from "../public/web_2.png";
 import web_3 from "../public/web_3.png";
-import pic from "../public/pic.jpg";
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,7 +47,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="pan.pdf" download='pan.pdf'
                 >
                   Resume
                 </a>
@@ -61,13 +62,12 @@ export default function Home() {
               Fullstack Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+            I am very committed towards my projects.Love to learn more and more about the new technologies of this new world.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href=""><AiFillTwitterCircle /></a>
-              <a href=""><AiFillLinkedin /></a>
-              <a href=""><AiFillGithub /></a>
+              <a href="https://github.com/ShijazKS"><AiFillGithub /></a>
+              <a href="https://in.linkedin.com/in/shijaz-ks-458ab31b7"><AiFillLinkedin /></a>            
+              <a href="https://twitter.com/ShijazKs"><AiFillTwitterCircle /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={pic} layout="fill" objectFit="cover" />
@@ -78,18 +78,14 @@ export default function Home() {
 
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">My Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Since the beginning of my journey as a web
+              developer, I've done remote work in
+              <span className="text-teal-500"> websites </span>
+              consulted for <span className="text-teal-500">mobile apps </span>
+              and collaborated with talanted people to create dynamic sites with 
+              database.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -108,7 +104,16 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={soon1}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={soon2}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -126,7 +131,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web4}
+                src={web_2}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -135,16 +140,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
+                src={soon3}
               />
             </div>
           </div>
