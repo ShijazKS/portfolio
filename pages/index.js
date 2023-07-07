@@ -17,9 +17,6 @@ import { useState } from "react";
 import pic from "../public/pic.jpg";
 import Image from "next/image";
 
-// import pan from "../public/pan.pdf";
-import soon1 from "../public/soon1.png";
-import soon2 from "../public/soon2.png";
 import etalk from "../public/etalk.png";
 import web_1 from "../public/web_1.png";
 import web_2 from "../public/web_2.png";
@@ -54,7 +51,7 @@ export default function Home() {
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="Resume.pdf"
-                  download="Shijaz.pdf"
+                  download="ShijazKS.pdf"
                 >
                   Resume
                 </a>
