@@ -19,7 +19,6 @@ import Image from "next/image";
 
 import open from "../public/open-talk.png"
 import etalk from "../public/etalk.png";
-import web_3 from "../public/web_3.png";
 import clever from "../public/clever.png";
 import gamify from "../public/gamify.png";
 import imaginify from "../public/imaginify.png";
@@ -49,7 +48,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="Resume.pdf"
+                  href="shijazks-resume.pdf"
                   download="shijazks_resume.pdf"
                 >
                   Resume
