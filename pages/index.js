@@ -29,11 +29,6 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <Head>
-        <title>Shijaz ks</title>
-        <meta name="keywords" content="shijaz ks,ks,jazdesign,jaz,shijaz" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 xs:px-0 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
