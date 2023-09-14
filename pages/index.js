@@ -6,6 +6,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { FaSquareXTwitter,FaXTwitter } from "react-icons/fa6";
 import {
   BsFillMoonStarsFill,
   BsTwitter,
@@ -17,7 +18,7 @@ import { useState } from "react";
 import pic from "../public/pic.jpg";
 import Image from "next/image";
 
-import open from "../public/open-talk.png"
+import open from "../public/opentalk.png"
 import etalk from "../public/etalk.png";
 import clever from "../public/clever.png";
 import gamify from "../public/gamify.png";
@@ -53,7 +54,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Shijaz Ks
+              SHIJAZ KS
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Fullstack Developer.
@@ -70,7 +71,8 @@ export default function Home() {
                 <AiFillLinkedin />
               </a>
               <a href="https://twitter.com/ShijazKs">
-                <AiFillTwitterCircle />
+               <FaSquareXTwitter/>
+                {/* <AiFillTwitterCircle/> */}
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-56 h-56 sm:w-80 sm:h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -165,7 +167,7 @@ export default function Home() {
             <ul className="flex justify-center py-2 items-center">
               <li>
                 <a href="https://twitter.com/ShijazKs">
-                  <BsTwitter className="cursor-pointer text-xl mx-2" />
+                  <FaXTwitter className="cursor-pointer text-xl mx-2" />
                 </a>
               </li>
               <li>
