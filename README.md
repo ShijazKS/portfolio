@@ -7,4 +7,5 @@
 -   Build Command: `npm run build` or `yarn build`
 -   Deploy using [vercel](https://vercel.com)
 
-## 📄 [License](https://github.com/shijazks-portfolio/portfolio/blob/main/LICENSE)
+## 📄 License
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE]() - see the [LICENSE](https://github.com/ShijazKS/shijazks-portfolio/blob/main/LICENSE) file for details.
