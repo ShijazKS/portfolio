@@ -1,29 +1,16 @@
-import Head from "next/head";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
-import { MdEmail } from "react-icons/md";
-import { FaSquareXTwitter,FaXTwitter } from "react-icons/fa6";
-import {
-  BsFillMoonStarsFill,
-  BsTwitter,
-  BsInstagram,
-  BsLinkedin,
-} from "react-icons/bs";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 
 import pic from "../public/pic.jpg";
 import Image from "next/image";
 
-import open from "../public/opentalk.png"
-import etalk from "../public/etalk.png";
-import clever from "../public/clever.png";
-import gamify from "../public/gamify.png";
-import imaginify from "../public/imaginify.png";
-import thequran from "../public/thequran.png";
+
+import ProjectCard from "./ProjectCard";
+import Footer from "./Footer";
+import ProjectList from "./ProjectList";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -64,14 +51,23 @@ export default function Home() {
               more about the new technologies of this new world.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/ShijazKS">
+              <a
+                className="hover:text-black dark:hover:text-white"
+                href="https://github.com/ShijazKS"
+              >
                 <AiFillGithub />
               </a>
-              <a href="https://www.linkedin.com/in/shijaz-ks/">
+              <a
+                className="hover:text-blue-600 "
+                href="https://www.linkedin.com/in/shijaz-ks/"
+              >
                 <AiFillLinkedin />
               </a>
-              <a href="https://twitter.com/ShijazKs">
-               <FaSquareXTwitter/>
+              <a
+                className="hover:text-black dark:hover:text-white"
+                href="https://twitter.com/ShijazKs"
+              >
+                <FaSquareXTwitter />
                 {/* <AiFillTwitterCircle/> */}
               </a>
             </div>
@@ -81,121 +77,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10">
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white ">My Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a web developer, I've done
-              remote work in
-              <span className="text-teal-500"> websites </span>
-              and collaborated with talanted people to create dynamic sites with
-              database.
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <a href="https://cleversystems.vercel.app/">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={clever}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a href="">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={etalk}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a href="https://imaginify.vercel.app/">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={imaginify}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a href="https://open-talk.vercel.app">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={open}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a href="https://thequran.framer.ai/">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={thequran}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a href="https://gamey-sage.vercel.app/">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={gamify}
-                />
-              </a>
-            </div>
-          </div>
-        </section>
+        <ProjectCard />
+        <ProjectList/>
 
-        <footer className="">
-          <div className="py-5 text-center dark:text-white">
-            <ul className="flex justify-center py-2 items-center">
-              <li>
-                <a href="https://twitter.com/ShijazKs">
-                  <FaXTwitter className="cursor-pointer text-xl mx-2" />
-                </a>
-              </li>
-              <li>
-                <a href="http://instagram.com/_u/shijaz_ks/">
-                  <BsInstagram className="cursor-pointer text-xl mx-2" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/shijaz-ks/">
-                  <BsLinkedin className="cursor-pointer text-xl mx-2" />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hafizshijaz@gmail.com">
-                  <MdEmail className="cursor-pointer text-2xl mx-2" />
-                </a>
-              </li>
-            </ul>
-            <p className="text-sm">
-              Copyright©2022{" "}
-              <span className="text-blue-800 dark:text-yellow-500">
-                {" "}
-                Jaz Design{" "}
-              </span>{" "}
-              all rights reserved.
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );
