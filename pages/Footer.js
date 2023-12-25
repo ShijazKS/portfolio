@@ -7,7 +7,8 @@ import {
     BsInstagram,
     BsLinkedin,
   } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+  import { BiLogoGmail } from "react-icons/bi";
+// import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -31,7 +32,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="mailto:hafizshijaz@gmail.com" className='hover:text-cyan-500' >
-                  <MdEmail className="cursor-pointer text-2xl mx-2" />
+                  <BiLogoGmail className="cursor-pointer text-2xl mx-2" />
                 </a>
               </li>
             </ul>
