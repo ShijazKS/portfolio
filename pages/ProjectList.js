@@ -5,7 +5,7 @@ const ProjectList = () => {
     <section>
       <h3 className="text-3xl py-1 mb-4 dark:text-white ">Other Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="projectList border-2 border-slate-500 p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
+        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
           <a href="https://github.com/ShijazKS/dotfiles">
             <h1 className="font-bold text-lg">DotFiles</h1>
             <p className="text-sm">
@@ -27,7 +27,7 @@ const ProjectList = () => {
             </div>
           </a>
         </div>
-        <div className="projectList border-2 border-slate-500 p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
+        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
           <a href="https://github.com/ShijazKS/ExpenseTracker">
             <h1 className="font-bold text-lg">ExpenseTracker</h1>
             <p className="text-sm">
@@ -44,7 +44,7 @@ const ProjectList = () => {
             </div>
           </a>
         </div>
-        <div className="projectList border-2 border-slate-500 p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
+        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
           <a href="https://github.com/ShijazKS/Quran-Reciters">
             <h1 className="font-bold text-lg">QuranReciters</h1>
             <p className="text-sm">
@@ -63,7 +63,7 @@ const ProjectList = () => {
             </div>
           </a>
         </div>
-        <div className="projectList border-2 border-slate-500 p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
+        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
           <a href="https://github.com/ShijazKS/Minimo">
             <h1 className="font-bold text-lg">Minimo</h1>
             <p className="text-sm">
