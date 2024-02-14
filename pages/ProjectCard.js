@@ -34,7 +34,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={clever}
             />
-            <div class="overlay-text">CLEVER SYSTEMS</div>
+            
           </a>
         </div>
         <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
@@ -46,7 +46,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={open}
             />
-            <div class="overlay-text">OPEN TALK</div>
+           
           </a>
         </div>
 
@@ -59,7 +59,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={imaginify}
             />
-            <div class="overlay-text">IMAGINIFY</div>
+            
           </a>
         </div>
         <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
@@ -71,7 +71,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={jazblog}
             />
-            <div class="overlay-text">JAZ BLOG</div>
+
           </a>
         </div>
         <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl ">
@@ -83,7 +83,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={parkCar}
             />
-            <div class="overlay-text">CRAZE PARK</div>
+            
           </a>
         </div>
 
@@ -96,7 +96,7 @@ const ProjectCard = () => {
               layout="responsive"
               src={gamify}
             />
-            <div class="overlay-text">GAMEY</div>
+            
           </a>
         </div>
       </div>

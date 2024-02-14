@@ -1,7 +1,9 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
 import { useState } from "react";
 
 import pic from "../public/pic.jpg";
@@ -40,7 +42,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-6xl">
               SHIJAZ KS
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -58,18 +60,20 @@ export default function Home() {
                 <AiFillGithub />
               </a>
               <a
+                className="hover:text-black dark:hover:text-white"
+                href="https://leetcode.com/shijaz/"
+              >
+                {/* <FaSquareXTwitter /> */}
+                <TbBrandLeetcode />
+                {/* <AiFillTwitterCircle/> */}
+              </a>
+              <a
                 className="hover:text-blue-600 "
                 href="https://www.linkedin.com/in/shijaz-ks/"
               >
                 <AiFillLinkedin />
               </a>
-              <a
-                className="hover:text-black dark:hover:text-white"
-                href="https://twitter.com/ShijazKs"
-              >
-                <FaSquareXTwitter />
-                {/* <AiFillTwitterCircle/> */}
-              </a>
+              
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-56 h-56 sm:w-80 sm:h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={pic} layout="fill" objectFit="cover" />

@@ -25,40 +25,6 @@ a {
 }
 
 /* Add this CSS to your stylesheet */
-.projectBox {
-  position: relative;
-  overflow: hidden;
-}
-
-.projectBox:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* Adjust the transparency as needed */
-  z-index: 1;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* Text color */
-  font-size: 24px; /* Adjust the font size as needed */
-  font-style: italic;
-  z-index: 2;
-  text-align: center;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
-}
-
-.projectBox:hover .overlay-text {
-  opacity: 1; /* Show the text on hover */
-}
-
 .link-wrapper {
   position: relative;
   overflow: hidden;
