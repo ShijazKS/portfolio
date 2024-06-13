@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-import open from "../public/openTalk.png";
-import etalk from "../public/etalk.png";
+import open from "../public/OpenTalk.png";
+import dot from "../public/dotConnect2.png";
 import clever from "../public/clever.png";
 import gamify from "../public/gamify.png";
 import imaginify from "../public/imaginify.png";
@@ -25,7 +25,8 @@ const ProjectCard = () => {
         </p>
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
+
+        <div className="projectBox basis-1/3 flex-1  shadow-2xl border-2 border-slate-400  rounded-xl">
           <a href="https://cleversystems.vercel.app/">
             <Image
               className="rounded-lg object-cover"
@@ -37,10 +38,10 @@ const ProjectCard = () => {
             
           </a>
         </div>
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
+        <div className="projectBox basis-1/3 flex-1 border-2 border-slate-400  shadow-2xl  rounded-xl">
           <a href="https://open-talk.vercel.app">
             <Image
-              class="rounded-lg object-cover"
+              class="rounded-xl object-cover"
               width={"100%"}
               height={"100%"}
               layout="responsive"
@@ -50,7 +51,7 @@ const ProjectCard = () => {
           </a>
         </div>
 
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
+        <div className="projectBox basis-1/3 flex-1  shadow-2xl border-2 border-slate-400   rounded-xl">
           <a href="https://imaginify.vercel.app/">
             <Image
               className="rounded-lg object-cover"
@@ -62,19 +63,8 @@ const ProjectCard = () => {
             
           </a>
         </div>
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
-          <a href="https://jaz-blog.vercel.app/">
-            <Image
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"
-              src={jazblog}
-            />
-
-          </a>
-        </div>
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl ">
+      
+        <div className="projectBox basis-1/3 flex-1 border-2 border-slate-400  shadow-2xl  rounded-xl ">
           <a href="https://crazepark.web.app" className="link-wrapper">
             <Image
               className="rounded-lg object-cover"
@@ -86,15 +76,27 @@ const ProjectCard = () => {
             
           </a>
         </div>
-
-        <div className="projectBox basis-1/3 flex-1 border shadow-2xl border-gray-300 dark:border-none rounded-xl">
-          <a href="https://gamey-sage.vercel.app/">
+        <div className="projectBox basis-1/3 flex-1 border-2 border-slate-400 shadow-2xl  rounded-xl bg-gray-100">
+          <a href="https://jaz-blog.vercel.app/">
             <Image
               className="rounded-lg object-cover"
               width={"100%"}
               height={"100%"}
               layout="responsive"
-              src={gamify}
+              src={jazblog}
+            />
+
+          </a>
+        </div>
+
+        <div className="projectBox basis-1/3 flex-1 border-2 border-slate-400  shadow-2xl  rounded-xl">
+          <a href="https://dotconnect.vercel.app/">
+            <Image
+              className="rounded-lg object-cover"
+              width={"100%"}
+              height={"100%"}
+              layout="responsive"
+              src={dot}
             />
             
           </a>

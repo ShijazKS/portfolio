@@ -1,6 +1,7 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { MdLightMode,MdNightlight } from "react-icons/md";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
@@ -42,7 +43,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-semibold dark:text-teal-400 md:text-6xl">
               SHIJAZ KS
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -60,7 +61,7 @@ export default function Home() {
                 <AiFillGithub />
               </a>
               <a
-                className="hover:text-black dark:hover:text-white"
+                className="hover:text-orange-700 dark:hover:text-white"
                 href="https://leetcode.com/shijaz/"
               >
                 {/* <FaSquareXTwitter /> */}
