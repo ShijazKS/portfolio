@@ -43,7 +43,7 @@ const Home = () => {
           <h3 className="text-2xl py-2 dark:text-white md:text-3xl text-[#3e3232] font-semibold">
             Software Developer
           </h3>
-          <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl font-mono mx-auto md:text-xl">
+          <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl  mx-auto md:text-xl">
             I am deeply committed to my projects and have a strong passion for
             continuously exploring and learning about emerging technologies in
             today's ever-evolving world.
