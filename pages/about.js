@@ -11,7 +11,7 @@ import opentalk from "../public/projects/opentalk.png";
 import chexcare from "../public/projects/chexcare.png";
 import dotconnect from "../public/projects/dotconnect.png";
 
-const Home = () => {
+const about = () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -117,4 +117,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default about;

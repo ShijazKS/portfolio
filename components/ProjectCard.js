@@ -13,16 +13,8 @@ const ProjectCard = () => {
   return (
     <section className="py-10">
       <div>
-        <h3 className="text-3xl py-1 dark:text-white ">My Projects</h3>
-        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-          Embarking on my web development journey as a college student, I've
-          engaged in remote collaborations, actively contributing to the
-          creation of
-          <span className="text-teal-500"> dynamic websites </span>. I am
-          enthusiastic about expanding my knowledge in this area. I've had the
-          privilege of working with talented individuals, collectively bringing
-          innovative digital solutions to life.
-        </p>
+        <h3 className="text-3xl py-1 dark:text-white text-teal-800 font-semibold font-mono">My Projects</h3>
+       
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
 

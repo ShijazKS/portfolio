@@ -23,6 +23,14 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+@font-face {
+  font-family: "chubbo";
+  src: url("../public/Chubbo.ttf");
+}
+@font-face {
+  font-family: "tanker";
+  src: url("../public/Tanker.otf");
+}
 
 /* Add this CSS to your stylesheet */
 .link-wrapper {
