@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import SplashScreen from "../components/splashScreen.js";
+// import SplashScreen from "../components/splashScreen.js";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -35,7 +35,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
-      {loading ? <SplashScreen /> : <Component {...pageProps} />}
+      {/* {loading ? <SplashScreen /> : <Component {...pageProps} />} */}
+       <Component {...pageProps} />
     </>
   );
 }
