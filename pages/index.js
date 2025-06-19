@@ -11,7 +11,6 @@ import opentalk from "../public/projects/opentalk.png";
 import chexcare from "../public/projects/chexcare.png";
 import dotconnect from "../public/projects/dotconnect.png";
 import ProjectList from "../components/ProjectList";
-import ProjectShowcase from "../components/ProjectShowCase";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
