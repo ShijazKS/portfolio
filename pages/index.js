@@ -76,7 +76,7 @@ const Home = () => {
             {/* Image */}
             <Image src={pic} layout="fill" objectFit="cover" />
 
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-30 z-10 hover:bg-opacity-10 transition-colors duration-400" />
+            <div className="hidden lg:flex absolute inset-0 bg-slate-900 bg-opacity-30 z-10 hover:bg-opacity-10 transition-colors duration-400" />
           </div>
         </div>
 
