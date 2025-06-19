@@ -1,89 +1,59 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+
+const projects = [
+  {
+    title: "Travel Assistant AI",
+    github: "https://github.com/ShijazKS/Travel_Assist",
+    description:
+      "A desktop application powered by a reinforcement learning agent that recommends tourist destinations within Indian states based on user preference history.",
+  },
+  {
+    title: "Gamey - One Minute",
+    github: "https://github.com/ShijazKS/Gamey",
+    description:
+      "A fast-paced one-minute game where players catch balls to score while avoiding two enemies — inspired by classic snake mechanics.",
+  },
+  {
+    title: "Minimo - Expense Tracker",
+    github: "https://github.com/ShijazKS/Minimo",
+    description:
+      "A full-stack expense tracker with interactive visualizations, allowing users to monitor spending by category through dynamic charts and graphs.",
+  },
+  
+];
+
+const ProjectCard = ({ title, github, description }) => (
+  <div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-5 border border-slate-900 dark:border-white transition-all hover:shadow-xl">
+    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+      {title}
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+      {description}
+    </p>
+    <a
+      href={github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium text-blue-600 dark:text-blue-400 inline-flex items-center hover:underline"
+    >
+      <FaGithub className="mr-1" />
+      View on GitHub
+    </a>
+  </div>
+);
 
 const ProjectList = () => {
   return (
-    <section>
-      <h3 className="text-3xl py-1 mb-4 dark:text-white ">Other Projects</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
-          <a href="https://github.com/ShijazKS/dotfiles">
-            <h1 className="font-bold text-lg">DotFiles</h1>
-            <p className="text-sm">
-            Optimized Arch Linux dotfiles with a BSPWM window manager configuration, featuring an efficient setup.
-            </p>
-            <div>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Bspwm
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                PolyBar
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Alacritty
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Zathura
-              </span>
-            </div>
-          </a>
-        </div>
-        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
-          <a href="https://github.com/ShijazKS/ExpenseTracker">
-            <h1 className="font-bold text-lg">ExpenseTracker</h1>
-            <p className="text-sm">
-              Dynamic web application for efficient expense tracking with
-              insightful reports.
-            </p>
-            <div>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Python
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Tkinder
-              </span>
-            </div>
-          </a>
-        </div>
-        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
-          <a href="https://github.com/ShijazKS/Quran-Reciters">
-            <h1 className="font-bold text-lg">QuranReciters</h1>
-            <p className="text-sm">
-            Interactively  explore and listen to recitations of Quranic chapters (surahs) by various reciters.
-            </p>
-            <div>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Python
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                CLI
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                API
-              </span>
-            </div>
-          </a>
-        </div>
-        <div className="projectList  p-2 rounded-lg dark:border-gray-400 dark:text-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-700">
-          <a href="https://github.com/ShijazKS/Minimo">
-            <h1 className="font-bold text-lg">Minimo</h1>
-            <p className="text-sm">
-            Dynamic website for efficient expense tracking, providing an intuitive platform to manage financial activities. 
-            </p>
-            <div>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                MERN
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                Auth
-              </span>
-              <span className="inline-flex items-center rounded-md bg-blue-50 mt-2 px-2 py-1 mr-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-400 dark:bg-gray-800 dark:text-blue-50 dark:ring-slate-400">
-                DataAnalysis
-              </span>
-            </div>
-          </a>
-        </div>
+    <section className="pb-8 ">
+      <h3 className="text-3xl pb-6 dark:text-white text-teal-800 font-semibold font-sans">
+        Other Projects
+      </h3>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
-      <div class="flex-grow border border-gray-300 dark:border-gray-800 mt-4"></div>
     </section>
   );
 };

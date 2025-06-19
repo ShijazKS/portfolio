@@ -94,19 +94,19 @@ const about = () => {
             />
             <ProjectCase
               pic={opentalk}
-              site="https://cleversystems.vercel.app/"
+              site="https://open-talk.vercel.app/"
               description="An anonymous real-time chat application that allows users to create and join temporary chat rooms without login or data storage. Built for privacy and simplicity, it supports seamless real-time communication using WebSockets."
               title="OpenTalk"
             />
             <ProjectCase
               pic={chexcare}
-              site="https://cleversystems.vercel.app/"
+              site="https://chexcare.vercel.app/"
               description="An AI-based medical application for detecting pneumonia from chest X-ray images. It provides diagnostic reports with probability scores, maintains patient history, and includes secure login features. Designed to assist in early diagnosis and streamline medical workflows."
               title="CheXCare"
               />
             <ProjectCase
               pic={dotconnect}
-              site="https://cleversystems.vercel.app/"
+              site="https://dotconnect.vercel.app/"
               description="A nostalgic dot-connecting game with multiple play modes, including two-player local, multiplayer, AI opponent, and online play. The game features a clean UI and interactive experience, bringing a modern touch to a classic gameplay concept."
               title="DotConnect"
             />

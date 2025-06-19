@@ -10,6 +10,8 @@ import clever from "../public/projects/clever.png";
 import opentalk from "../public/projects/opentalk.png";
 import chexcare from "../public/projects/chexcare.png";
 import dotconnect from "../public/projects/dotconnect.png";
+import ProjectList from "../components/ProjectList";
+import ProjectShowcase from "../components/ProjectShowCase";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -79,10 +81,10 @@ const Home = () => {
         </div>
 
         {/* Projects */}
-        <section className="py-10">
+        <section className="py-4">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white text-teal-800 font-semibold font-mono">
-              My Projects
+            <h3 className="text-3xl py-1 dark:text-white text-teal-800 font-semibold font-sans">
+              Featured Projects
             </h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
@@ -94,24 +96,29 @@ const Home = () => {
             />
             <ProjectCase
               pic={opentalk}
-              site="https://cleversystems.vercel.app/"
+              site="https://open-talk.vercel.app/"
               description="An anonymous real-time chat application that allows users to create and join temporary chat rooms without login or data storage. Built for privacy and simplicity, it supports seamless real-time communication using WebSockets."
               title="OpenTalk"
             />
             <ProjectCase
               pic={chexcare}
-              site="https://cleversystems.vercel.app/"
+              site="https://chexcare.vercel.app/"
               description="An AI-based medical application for detecting pneumonia from chest X-ray images. It provides diagnostic reports with probability scores, maintains patient history, and includes secure login features. Designed to assist in early diagnosis and streamline medical workflows."
               title="CheXCare"
-              />
+            />
             <ProjectCase
               pic={dotconnect}
-              site="https://cleversystems.vercel.app/"
+              site="https://dotconnect.vercel.app/"
               description="A nostalgic dot-connecting game with multiple play modes, including two-player local, multiplayer, AI opponent, and online play. The game features a clean UI and interactive experience, bringing a modern touch to a classic gameplay concept."
               title="DotConnect"
             />
           </div>
         </section>
+        <ProjectList />
+        <footer className="w-full mt-10 py-6 border-t border-slate-400 dark:border-gray-700 text-center text-sm text-gray-600 dark:text-gray-400">
+          {/* <p>  © {new Date().getFullYear()} Shijaz K S · Crafted with care and code</p> */}
+          <p>© {new Date().getFullYear()} Shijaz K S · MTech CSE · NIT Calicut</p>
+        </footer>
       </main>
     </div>
   );
