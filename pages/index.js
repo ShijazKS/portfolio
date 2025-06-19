@@ -30,8 +30,8 @@ const Home = () => {
             <li>
               <a
                 className=" px-4 py-1.5 border-[3px] font-semibold border-[#3E3232] dark:border-white rounded ml-8 hover:bg-[#3E3232] hover:text-[#e8f0c8] dark:hover:text-slate-900 dark:hover:bg-white transition-colors duration-300"
-                href="shijazks-resume.pdf"
-                download="shijazks_resume.pdf"
+                href="resume.pdf"
+                download="shijazks.pdf"
               >
                 Resume
               </a>
