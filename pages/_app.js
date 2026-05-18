@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {/* Add the favicon */}
       <Head>
-        <title>Shijaz ks</title>
+        <title>SHIJAZ KS</title>
         <meta name="keywords" content="shijaz ks,ks,jazdesign,jaz,shijaz" />
         <link rel="shortcut icon" href="/static/favicon.ico" sizes="any" />
         <link
