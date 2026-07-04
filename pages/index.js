@@ -16,6 +16,7 @@ import clever from "../public/projects/clever.png";
 import opentalk from "../public/projects/opentalk.png";
 import chexcare from "../public/projects/chexcare.png";
 import dotconnect from "../public/projects/dotconnect.png";
+import webSentinel from "../public/projects/websentinel.png";
 
 const projects = [
   {
@@ -50,6 +51,14 @@ const projects = [
       "Built a multiplayer nostalgic dot-connecting game featuring AI mode, local multiplayer, and online gameplay with interactive UI.",
     tech: ["React", "Firebase", "Game Logic", "Realtime DB"],
   },
+  {
+    // not ai powered but still a websecurity site
+    title: "WebSentinel - AI Web Security",
+    image: webSentinel,
+    site: "https://github.com/ShijazKS/WebSentinel",
+    description:" Developed a web security application that detects and prevents malicious activities on websites using AI-based threat detection algorithms and real-time monitoring.",
+    tech: ["Python", "TensorFlow", "Flask", "MongoDB"],
+  }
 ];
 
 const otherprojects = [
@@ -58,6 +67,10 @@ const otherprojects = [
     github: "https://github.com/ShijazKS/Travel_Assist",
     description:
       "A desktop application powered by a reinforcement learning agent that recommends tourist destinations within Indian states based on user preference history.",
+  },
+  {
+    title: "Smart Accounting & Billing Mobile App",
+    description:"Full-featured mobile accounting solution with inventory management, customer management, invoice generation, GST computation, and sales tracking functionalities."
   },
   {
     title: "Gamey - One Minute",
@@ -88,6 +101,17 @@ const otherprojects = [
     description:
       "A business-oriented data management application built for handling customer data entry, analytics, automated reporting, and secure backup workflows. Designed to streamline operational tasks through an intuitive interface and real-time insights.",
   },
+  {
+    title: "Medata - Medicine Information API",
+    github: "https://github.com/ShijazKS/Medata",
+    description:"A REST API for scraping and displaying information about various medicines, including their uses and side effects."
+  },
+  {
+    title: "QuoridorGame",
+    github: "https://github.com/ShijazKS/QuoridorGame",
+    description:
+      "A digital implementation of the classic Quoridor board game, featuring a responsive UI and smooth gameplay mechanics."
+  }
 ];
 
 export default function Home() {
